@@ -1,0 +1,61 @@
+---
+---
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="#home">example008</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 100;
+    box-shadow: var(--shadow);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: var(--spacing-md);
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: var(--spacing-sm);
+    }
+
+    .logo a {
+      font-size: 1.25rem;
+    }
+  }
+</style>
